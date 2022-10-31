@@ -7,3 +7,6 @@ class Inventario(models.Model):
     descripcion = models.TextField(max_length=200)
     disponiible=models.IntegerField(null=True)
     valor=models.IntegerField(null=False)
+
+    def __str__(self):
+        return self.placa

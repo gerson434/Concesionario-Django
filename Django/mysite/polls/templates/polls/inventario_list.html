@@ -4,18 +4,28 @@
 <table>
     <tr>
         <th>
-        Elementos
+        placa
+        </th>
+        <th>
+        Modelo
+        </th>
+        <th>
+        Descripcion
         </th>
     </tr>
-    {% for inventario in object_list %}
-    <tr><td>
+    {% for Inventario in object_list %}
+    <td>
         {{Inventario.placa}}
         {{Inventario.modelo}}
-    </td></tr>
-    {% endfor %}
-    <tr>
+    </td>
+    <td>
 
-    </tr>
-     <tr></tr>
-    
+        {{Inventario.modelo}}
+    </td>
+    <td>
+        {{Inventario.Descripcion}}
+
+    </td>
+    {% endfor %}
+
 </table>
